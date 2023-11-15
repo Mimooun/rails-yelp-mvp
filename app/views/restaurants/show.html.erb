@@ -1,0 +1,14 @@
+<div class="container">
+<div class="form">
+<h2><%= @restaurant.name %></h2>
+<p><i class="fa-solid fa-house">&nbsp;</i><%= @restaurant.address %></p>
+<p><i class="fa-solid fa-phone">&nbsp;</i><%= @restaurant.phone_number %></p>
+<p><i class="fa-solid fa-tag">&nbsp;</i><%= @restaurant.category %></p>
+</div>
+</div>
+
+
+
+<h3>Reviews</h3>
+<%= render "reviews/form", review: @review %>
+<%= render "reviews/list", reviews: @restaurant.reviews %>

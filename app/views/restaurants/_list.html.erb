@@ -1,0 +1,15 @@
+
+<div class="view">
+  <% @restaurants.each do |restaurant| %>
+    <div class="task">
+      <div class="task-info">
+       <div class="task-link">
+        <p><%= link_to restaurant.name, restaurant_path(restaurant)%> <br></p>
+      </div>
+        <div><%= restaurant.category %></div>
+        <div><%= restaurant.address %></div>
+      </div>
+
+    </div>
+  <% end %>
+</div>

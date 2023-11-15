@@ -1,0 +1,9 @@
+<!-- app/views/reviews/_list.html.erb -->
+<ul>
+  <% reviews.each do |review| %>
+    <li>
+      <%= review.content %> - <%= review.rating %> ✨ 
+    </li>
+  <% end %>
+</ul>
+    <%= link_to "Back", restaurants_path %>
